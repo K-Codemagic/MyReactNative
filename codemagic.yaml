@@ -10,9 +10,9 @@ workflows:
         triggering:
             events:
                 - tag
-        tag_patterns:
-          - pattern: '*'
-            include: true
+            tag_patterns:
+                - pattern: '*'
+                  include: true
         scripts:
             - name: Install npm dependencies
               script: |
