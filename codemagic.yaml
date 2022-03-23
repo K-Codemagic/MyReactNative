@@ -22,7 +22,7 @@ workflows:
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/android/local.properties"          
             - name: Build Android release
               script: |
-                cd android && chmod +x gradlew
+                cd android
                 ./gradlew assembleRelease
         artifacts:
             - android/app/build/outputs/**/*.apk
