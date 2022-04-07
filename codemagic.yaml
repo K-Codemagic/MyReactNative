@@ -23,9 +23,9 @@ workflows:
             - name: Build Android release
               script: |
                 cd android
-                ./gradlew assembleRelease
+                ./gradlew assembleKalgiRelease
         artifacts:
-            - android/app/build/outputs/**/*.apk
+            - android/app/build/outputs/**/**/*.apk
         publishing:
           email:
             recipients:
