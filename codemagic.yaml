@@ -24,9 +24,19 @@ workflows:
               script: |
                 cd android && chmod +x gradlew
                 ./gradlew assembleRelease
+            - name: Build finished successfully
+              script: touch ~/SUCCESS
         artifacts:
             - android/app/build/outputs/**/**/*.apk
         publishing:
           email:
             recipients:
               - kalgi@nevercode.io
+          scripts:
+            - name: Report Build status
+              script: |   
+                if [ -f ~/SUCCESS ] ; then
+                echo "build successful"
+                else
+                echo "build failed"
+                fi
