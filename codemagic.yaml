@@ -2,11 +2,11 @@ workflows:
     react-native-android:
         name: React Native Android
         max_build_duration: 120
-        instance_type: mac_mini
+        instance_type: mac_pro
         environment:
             vars:
                 PACKAGE_NAME: "com.myreactnative"
-            node: v16.11.1
+            # node: v16.11.1
         triggering:
             events:
                 - tag
