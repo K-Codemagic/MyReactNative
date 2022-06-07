@@ -10,7 +10,7 @@ workflows:
                 - key1
             vars:
                 PACKAGE_NAME: "com.myreactnative"
-            # node: v16.11.1
+            node: v16.11.1
         triggering:
             events:
                 - tag
