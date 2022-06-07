@@ -5,7 +5,7 @@ workflows:
         instance_type: mac_pro
         environment:
             groups:
-                - keystore_credentials
+                - g
             android_signing:
                 - key1
             vars:
