@@ -9,7 +9,7 @@ workflows:
             android_signing:
                 - key1
             vars:
-                PACKAGE_NAME: "com.myreactnative"
+                PACKAGE_NAME: "com.myreactnative122"
             node: v16.11.1
         triggering:
             events:
