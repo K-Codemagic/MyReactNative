@@ -1,4 +1,4 @@
-package com.myreactnative1;
+package com.myreactnative122;
 
 import android.os.Bundle;
 
