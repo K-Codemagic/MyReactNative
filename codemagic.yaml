@@ -39,7 +39,7 @@ workflows:
               - kalgi@nevercode.io
           google_play:
               credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
-              track: internam testing
+              track: internal
           scripts:
             - name: Report Build status
               script: |   
