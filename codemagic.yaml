@@ -26,7 +26,7 @@ workflows:
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/android/local.properties"          
             - name: Build Android release
               script: |
-                #export BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
+                export BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
                 cd android && chmod +x gradlew
                 ./gradlew bundleRelease
             - name: Build finished successfully
