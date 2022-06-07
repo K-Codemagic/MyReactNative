@@ -135,7 +135,7 @@ android {
         applicationId "com.myreactnative122"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode buildnumber + 1
+        versionCode build_number + 1
         versionName "1.0"
     }
     splits {
