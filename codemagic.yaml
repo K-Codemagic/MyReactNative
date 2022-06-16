@@ -33,6 +33,7 @@ workflows:
               script: touch ~/SUCCESS
         artifacts:
             - android/app/build/outputs/**/*.aab
+            - android/app/build/outputs/**/*.apk
         publishing:
           email:
             recipients:
